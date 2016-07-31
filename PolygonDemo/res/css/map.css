@@ -1,0 +1,22 @@
+#map-container {
+    height: 100%;
+}
+#map-navbar {
+    height: 75px;
+    line-height: 75px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: lightgray;
+}
+#map {
+    background-color: lightblue;
+    
+    /* minus map-navbar height */
+    height: calc(100% - 75px);
+}
+@media screen and (max-width: 767px) {
+    #map-navbar {
+        height: auto;
+        padding: 15px;
+    }
+}

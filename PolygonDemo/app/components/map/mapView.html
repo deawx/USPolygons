@@ -1,0 +1,23 @@
+<div class="container-fluid" id="map-container" ng-controller="mapController as map">
+    <div class="form-inline" id="map-navbar">
+        <div class="form-group">
+            <select name="regions" class="form-control" role="menu" ng-model="selectedRegionName" ng-change="map.onSelectRegionName(selectedRegionName)">
+                <option value="" selected disabled>Select a Region...</option>
+                <option ng-repeat="regionName in map.regionNames track by $index">{{regionName}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="divisions" class="form-control" role="menu" ng-show="map.regionWasSelected()" ng-model="selectedDivisionName" ng-change="map.onSelectDivisionName(selectedDivisionName)">
+                <option value="" selected disabled>Select a Division...</option>
+                <option ng-repeat="divisionName in map.divisionNames track by $index">{{divisionName}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select name="states" class="form-control" role="menu" ng-show="map.divisionWasSelected()" ng-model="selectedStateName" ng-change="map.onSelectedStateName(selectedStateName)">
+                <option value="" selected disabled>Select a State...</option>
+                <option ng-repeat="stateName in map.stateNames track by $index">{{stateName}}</option>
+            </select>
+        </div>
+    </div>
+    <div id="map"></div>
+</div>
