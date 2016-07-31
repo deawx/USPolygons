@@ -1,0 +1,27 @@
+{
+  "name": "PolygonDemo",
+  "version": "1.0.0",
+  "description": "This project is a demonstration of displaying US States as polygons in Google Maps, with AngularJS.",
+  "main": "index.html",
+  "scripts": {
+    "test": "karma start app/tests/karma.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icampbell2/USPolygons"
+  },
+  "author": "icampbell2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/icampbell2/USPolygons/issues"
+  },
+  "homepage": "https://github.com/icampbell2/USPolygons",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "normalize.css": "^4.2.0"
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/x-icon" href="res/img/us_flag.ico" />
+    <title>US Polygons Demo</title>
+    
+    <!-- node_modules -->
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
+    <!-- res -->
+    <link rel="stylesheet" type="text/css" href="res/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="res/css/map.css" />
+</head>
+<body>
+    <header-directive></header-directive>
+    <main ui-view></main>
+    <footer-directive></footer-directive>
+    
+    <!-- node_modules -->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="node_modules/angular-resource/angular-resource.js"></script>
+    <!-- app -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <!-- shared -->
+    <script type="text/javascript" src="app/shared/constants/mapConstants.js"></script>
+    <script type="text/javascript" src="app/shared/services/fileService.js"></script>
+    <script type="text/javascript" src="app/shared/services/stringService.js"></script>
+    <script type="text/javascript" src="app/shared/header/headerController.js"></script>
+    <script type="text/javascript" src="app/shared/header/headerDirective.js"></script>
+    <script type="text/javascript" src="app/shared/footer/footerController.js"></script>
+    <script type="text/javascript" src="app/shared/footer/footerDirective.js"></script>
+    <!-- components -->
+    <script type="text/javascript" src="app/components/map/mapController.js"></script>
+    <!-- res -->
+    <script type="text/javascript" src="res/js/index.js"></script>
+</body>
+</html>
